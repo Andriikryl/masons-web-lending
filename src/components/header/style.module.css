@@ -1,0 +1,17 @@
+.header{
+    padding-block-start: 41px;
+    background-color: hsl(0, 0%, 20%);
+}
+
+.headerBox{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-inline-end: 28px;
+}
+
+.navList{
+    display: flex;
+}
