@@ -87,7 +87,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    margin-inline-end: 200px;
+    /* margin-inline-end: clamp(10px, 5vw + 1rem, 200px); */
 }
 
 
@@ -95,7 +95,7 @@
     display: flex;
     align-items: center;
     gap: 27px;
-    margin-inline-start: 200px;
+    /* margin-inline-start: clamp(10px, 5vw + 3rem, 200px); */
 }
 
 
@@ -169,7 +169,7 @@
     transition: transform 0.3s ease-in-out;
   }
   
-  @media (max-width:1540px) {
+  @media (max-width:1140px) {
     .nav{
       border-right: 1px solid hsla(0, 87%, 41%, .9);
       visibility: hidden;
@@ -218,7 +218,7 @@
     }
   }
   
-  @media (max-width:1540px) {
+  @media (max-width:1140px) {
     .burger{
       display: block;
     }

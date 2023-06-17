@@ -28,7 +28,7 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <Container className={styles.flex}>
+      <Container>
         <div className={styles.headerBox}>
           <a className={styles.logo} href="#">
             <Logo />

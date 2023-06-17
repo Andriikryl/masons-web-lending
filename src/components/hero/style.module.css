@@ -1,0 +1,132 @@
+.hero{
+  padding-block-start: 80px;
+  padding-block-end: 140px;
+  background-image: url(./images/bg.png);
+  background-position: center;
+  background-size: cover 990;
+  background-repeat: no-repeat;
+}
+
+.heroBox{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.imageOne{
+  grid-column:  2 span;
+  padding-block-start: 108px;
+}
+
+.imageTwo{
+  grid-column: 4/3 span;
+  padding-inline-start: 45px;
+}
+
+.imageThree{
+  grid-column: 7 / 6 span;
+  position: relative;
+  top: 100px;
+}
+
+.heroTitle{
+  font-family: 'Fairwall Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: clamp(20px, 5vw + 1rem, 100px);
+  line-height: 104.4%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F2F6FF;  
+  grid-column: 4 / 7 span;
+  max-width: 642px;
+  position: relative;
+  z-index: 10;
+}
+
+.heroTitle span{
+  color: hsla(47, 100%, 50%, 1);
+}
+
+.imageFour{
+  grid-column: 12/12 span;
+}
+
+.imageFive{
+  grid-column: 3/3 span;
+  position: relative;
+  bottom: 65px;
+}
+
+.heroBtn{
+  grid-column: 6/2 span;
+}
+
+.heroBtn button {
+  margin-block-start: 60px;
+  padding: 12px 33px;
+  border: 1px solid #F2F6FF;
+  border-radius: 100px;
+  background-color: transparent;
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 144.5%;
+  color: #F2F6FF;
+  cursor: pointer;
+}
+
+.imageSix{
+  grid-column: 8/3 span;
+  position: relative;
+  bottom: 50px;
+  right: 50px;
+}
+
+
+@media (max-width: 1050px) {
+  .heroBox{
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .imageFive{
+    grid-column: 1/3 span;
+  }
+
+  .heroBtn{
+    grid-column: 5/2 span;
+  }
+
+  .heroTitle{
+    grid-column: 3 / 5 span;
+  }
+}
+
+@media (max-width: 720px) {
+  .heroBox{
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .imageOne{
+    grid-column: 3 span;
+  }
+  .imageTwo{
+    grid-column: 3 span;
+  }
+  .imageThree{
+    grid-column: 2 / 5 span;
+  }
+  .heroTitle{
+    grid-column: 6 span;
+  }
+  .imageFour{
+    grid-column: 3 span;
+  }
+  .imageFive{
+    grid-column: 3 span;
+  }
+  .heroBtn{
+    grid-column: 3 / 6 span;
+  }
+  .imageSix{
+    grid-column: 1 / 2 span;
+  }
+}
