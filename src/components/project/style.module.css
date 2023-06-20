@@ -1,0 +1,36 @@
+.project{
+    /* display: flex; */
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 31px;
+    padding-inline-end: clamp(20px, 5vw + 5rem, 300px);
+    padding-inline-start: clamp(20px, 5vw + 2rem, 60px);
+    border: 1px solid hsla(222, 100%, 97%, 1);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.project:last-of-type{
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+
+.project:hover h2{
+    transform: scale(1.4) translateX(100px);
+    color: hsla(47, 100%, 50%, 1);
+    position: relative;
+    z-index: 100;
+}
+
+
+.project h2{
+    transition: all 0.4s;
+    font-family: 'Fairwall Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 186.9%;
+    text-transform: uppercase;
+    color: #D3D3D3;
+}
+

@@ -1,0 +1,48 @@
+.Printing{
+    margin-block-start: 140px;
+    margin-block-end: 60px;
+    overflow: hidden;
+}
+
+.printing__title{
+    font-family: 'Fairwall Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 111.4%;
+    color: #F2F6FF;
+    margin-block-end: 50px;
+}
+
+.printing__box{
+    display: flex;
+}
+
+@media (max-width: 775px) {
+    .printing__box{
+        flex-wrap: wrap;
+    }
+}
+
+.Printing__box_btn{
+    margin-block-start: 40px;
+    padding-block-end: 40px;
+    border-block-end: 2px solid hsla(222, 100%, 97%, 1);
+    display: flex;
+    justify-content: center;
+}
+
+.Printing__btn{
+    cursor: pointer;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 144.5%;
+    color: #F2F6FF;
+    border: 1px solid #F2F6FF;
+    border-radius: 100px;
+    background-color: transparent;
+    padding: 12px 33px;
+}
+
