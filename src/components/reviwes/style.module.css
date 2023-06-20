@@ -1,0 +1,121 @@
+.reviews{
+    margin-block: 120px;
+}
+
+  .reviews__title{
+    font-family: 'Fairwall Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 111.4%;
+    text-transform: uppercase;
+    color: #F2F6FF;
+    margin-block-end: 50px;
+  }
+  
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .job_experience {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 100px;
+    overflow-x: auto;
+    position: relative;
+    padding-block: 40px 70px;
+    scrollbar-color: hsla(47, 100%, 50%, 1);
+    border-block: 2px solid hsla(222, 100%, 97%, 1);
+  }
+  
+  .reviews__item{
+    max-width: 250px;
+  }
+
+  .reviews__img{
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    overflow: hidden;
+  }
+
+  .reviews__img img{
+    object-fit: cover;
+  }
+
+  .flex{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-block-end: 25px;
+  }
+  
+  .reviews__item:first-child::before{
+    content: "Current role";
+    position: absolute;
+    color: hsla(47, 100%, 50%, 1);;
+    top: 0rem;
+    left: 0;
+  }
+  
+ 
+  
+  .job_experience::-webkit-scrollbar{
+    height: 8px;
+  }
+  .job_experience::-webkit-scrollbar-track{
+    background-color: transparent;
+  }
+  .job_experience::-webkit-scrollbar-thumb{
+    background-color: hsla(47, 100%, 50%, 1);
+  }
+  
+  .job_experience::after{
+    content: "";
+    width: 50px;
+    background-color: transparent;
+  }
+
+  
+  .role{
+    font-family: 'Fairwall Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 111.4%;
+    color: #F2F6FF;
+    margin-block-end: 10px;
+  }
+  
+.reviews__time{
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 144.5%;
+    color: #393939;    
+}
+
+.reviews__desc{
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 144.5%;
+    color: #F2F6FF;
+}
+  
+  
+
+  
+
+  
+  
