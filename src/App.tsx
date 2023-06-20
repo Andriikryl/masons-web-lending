@@ -4,6 +4,7 @@ import Hero from "./components/hero/Hero";
 import Printing from "./components/printing/Printing";
 import Reviews from "./components/reviwes/Reviews";
 import RolString from "./components/rolString/RolString";
+import Sponsors from "./components/sponsors/Sponsors";
 import Types from "./components/types/Types";
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
       <RolString string="OUR WORKS / OUR WORKS" />
       <Reviews />
       <RolString string="partnerS / partnerS" />
+      <Sponsors />
+      <RolString string="ALSO WE CAN DO /" />
     </main>
   );
 }

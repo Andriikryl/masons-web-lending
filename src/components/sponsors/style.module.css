@@ -1,0 +1,70 @@
+:root {
+    --space: 40px;
+    --space-md: calc(var(--space) * 2);
+    --content-max-width: 60ch;
+  }
+
+  .sponsors{
+    margin-block: 100px;
+  }
+
+.sponsors__title{
+    font-family: 'Fairwall Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 111.4%;
+    color: #F2F6FF;
+}
+
+.gallery {
+    grid-column: full;
+    display: grid;
+    grid-template-columns: inherit;
+    padding-block: var(--space-md);
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    border-bottom: 2px solid hsla(222, 100%, 97%, 1);
+  }
+  
+
+  .gallery::-webkit-scrollbar{
+    height: 8px;
+  }
+  .gallery::-webkit-scrollbar-track{
+    background-color: transparent;
+  }
+  .gallery::-webkit-scrollbar-thumb{
+    background-color: hsla(47, 100%, 50%, 1);
+  }
+  
+  
+  .gallery .wrapper {
+    grid-column: content;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .gallery .wrapper::after {
+    content: "";
+    align-self: stretch;
+    padding-inline-end: max(
+      var(--space),
+      (100vw - var(--content-max-width)) / 2 - var(--space)
+    );
+  }
+  
+  .gallery .item {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+    inline-size: 100%;
+    max-inline-size: 15rem;
+    font-size: 2rem;
+    overflow: hidden;
+  }
