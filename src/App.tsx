@@ -10,10 +10,11 @@ function App() {
     <main>
       <Header />
       <Hero />
-      <RolString />
+      <RolString string="WE PRINTING ON" />
       <Printing />
-      <RolString />
+      <RolString string=" Types of PRINTING" />
       <Types />
+      <RolString string="OUR WORKS / OUR WORKS" />
     </main>
   );
 }
