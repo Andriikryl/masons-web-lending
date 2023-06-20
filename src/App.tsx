@@ -1,4 +1,5 @@
 import "./App.css";
+import CanDo from "./components/canDo/CanDo";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import Printing from "./components/printing/Printing";
@@ -21,6 +22,7 @@ function App() {
       <RolString string="partnerS / partnerS" />
       <Sponsors />
       <RolString string="ALSO WE CAN DO /" />
+      <CanDo />
     </main>
   );
 }
