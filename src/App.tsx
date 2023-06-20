@@ -2,6 +2,7 @@ import "./App.css";
 import CanDo from "./components/canDo/CanDo";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
+import Order from "./components/order/Order";
 import Printing from "./components/printing/Printing";
 import Reviews from "./components/reviwes/Reviews";
 import RolString from "./components/rolString/RolString";
@@ -23,6 +24,7 @@ function App() {
       <Sponsors />
       <RolString string="ALSO WE CAN DO /" />
       <CanDo />
+      <Order />
     </main>
   );
 }
