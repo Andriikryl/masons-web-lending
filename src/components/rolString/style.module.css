@@ -23,10 +23,11 @@
   }
 
   .marquee__item{
+    --size-lg: 200px;
     font-family: 'Fairwall Sans';
     font-style: normal;
     font-weight: 300;
-    font-size: 200px;
+    font-size: clamp(40px, 5vw + 2rem, var(--size-lg) );
     line-height: 104.4%;
     text-align: center;
     -webkit-text-stroke-color: hsla(47, 100%, 50%, 1);

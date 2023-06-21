@@ -1,5 +1,8 @@
+// Hero.js
 import { Container } from "../container/Container";
 import styles from "./style.module.css";
+import ImageComponent from "./ImageComponent";
+
 import ImageOne from "./images/one.jpg";
 import ImageTwo from "./images/two.jpg";
 import ImageThree from "./images/three.jpg";
@@ -13,29 +16,29 @@ export default function Hero() {
       <Container>
         <div className={styles.heroBox}>
           <div className={styles.imageOne}>
-            <img src={ImageOne} alt="image" />
+            <ImageComponent src={ImageOne} alt="image" />
           </div>
           <div className={styles.imageTwo}>
-            <img src={ImageTwo} alt="image" />
+            <ImageComponent src={ImageTwo} alt="image" />
           </div>
           <div className={styles.imageThree}>
-            <img src={ImageThree} alt="image" />
+            <ImageComponent src={ImageThree} alt="image" />
           </div>
           <h2 className={styles.heroTitle}>
             Masons <span> branding </span>
             workshop
           </h2>
           <div className={styles.imageFour}>
-            <img src={ImageFour} alt="image" />
+            <ImageComponent src={ImageFour} alt="image" />
           </div>
           <div className={styles.imageFive}>
-            <img src={ImageFive} alt="image" />
+            <ImageComponent src={ImageFive} alt="image" />
           </div>
           <div className={styles.heroBtn}>
             <button>Lets print!</button>
           </div>
           <div className={styles.imageSix}>
-            <img src={ImageSix} alt="image" />
+            <ImageComponent src={ImageSix} alt="image" />
           </div>
         </div>
       </Container>

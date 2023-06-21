@@ -1,5 +1,7 @@
+// Sponsors.js
 import { Container } from "../container/Container";
 import styles from "./style.module.css";
+import SponsorItem from "./SponsorItem";
 
 export default function Sponsors() {
   return (
@@ -7,68 +9,22 @@ export default function Sponsors() {
       <Container>
         <h3 className={styles.sponsors__title}>Partners</h3>
         <div className={styles.gallery}>
-          <div className={styles.wrapper}>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-one.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-three.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-five.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-two.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-three.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-one.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-three.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-five.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-two.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-three.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-one.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-three.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-five.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-two.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-three.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-one.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-three.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-five.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-two.svg" alt="img" />
-            </div>
-            <div className={styles.item}>
-              <img src="public/sponsors/spon-three.svg" alt="img" />
-            </div>
-          </div>
+          <ul className={styles.wrapper}>
+            <SponsorItem src="public/sponsors/spon-one.svg" alt="img" />
+            <SponsorItem src="public/sponsors/spon-three.svg" alt="img" />
+            <SponsorItem src="public/sponsors/spon-five.svg" alt="img" />
+            <SponsorItem src="public/sponsors/spon-one.svg" alt="img" />
+            <SponsorItem src="public/sponsors/spon-three.svg" alt="img" />
+            <SponsorItem src="public/sponsors/spon-five.svg" alt="img" />
+            <SponsorItem src="public/sponsors/spon-three.svg" alt="img" />
+            <SponsorItem src="public/sponsors/spon-five.svg" alt="img" />
+            <SponsorItem src="public/sponsors/spon-one.svg" alt="img" />
+            <SponsorItem src="public/sponsors/spon-three.svg" alt="img" />
+            <SponsorItem src="public/sponsors/spon-five.svg" alt="img" />
+            <SponsorItem src="public/sponsors/spon-one.svg" alt="img" />
+            <SponsorItem src="public/sponsors/spon-three.svg" alt="img" />
+            <SponsorItem src="public/sponsors/spon-five.svg" alt="img" />
+          </ul>
         </div>
       </Container>
     </section>

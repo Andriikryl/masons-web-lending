@@ -1,6 +1,7 @@
 .hero{
+  --space-lg: 140px;
   padding-block-start: 80px;
-  padding-block-end: 140px;
+  margin-block-end: clamp(30px, 5vw + 1rem, var(--space-lg));
   background-image: url(./images/bg.png);
   background-position: center;
   background-size: cover 990;

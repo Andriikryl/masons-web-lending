@@ -1,6 +1,17 @@
 import styles from "./style.module.css";
 
-export default function index({ index, title, setModal }) {
+interface Imodul {
+  setModal: React.Dispatch<
+    React.SetStateAction<{
+      active: boolean;
+      index: number;
+    }>
+  >;
+  index: number;
+  title: string;
+}
+
+export default function index({ index, title, setModal }: Imodul) {
   return (
     <div
       onMouseEnter={() => {

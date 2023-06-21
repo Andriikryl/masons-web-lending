@@ -1,30 +1,16 @@
 import { useState } from "react";
-import { Insta } from "../../icons/insta";
 import { Logo } from "../../icons/logo";
-import { Telegram } from "../../icons/telegram";
-import { Viber } from "../../icons/viber";
 import { Container } from "../container/Container";
 import styles from "./style.module.css";
 import BurgerButton from "./BurgerButton";
+import RenderLanguageButtons from "./renderLanguageButtons";
+import RenderSocialButtons from "./renderSocialButtons";
 
-export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [hideOrShow, setHideOrShow] = useState({});
+const Header = () => {
+  const [activeState, setActiveState] = useState(false);
 
-  const handleMenu = () => {
-    setIsOpen((prev) => !prev);
-    if (isOpen) {
-      setHideOrShow(() => {
-        return {};
-      });
-    } else {
-      setHideOrShow(() => {
-        return {
-          visibility: "visible",
-          transform: "none",
-        };
-      });
-    }
+  const handleClick = () => {
+    setActiveState((prev) => !prev);
   };
 
   return (
@@ -34,50 +20,22 @@ export default function Header() {
           <a className={styles.logo} href="#">
             <Logo />
           </a>
-          <nav className={styles.nav} style={hideOrShow}>
+          <nav
+            className={`${styles.nav} ${activeState ? styles.menu_active : ""}`}
+          >
             <ul className={styles.navList}>
-              <div className={styles.inner__boxOne}>
-                <li className={styles.navItem}>
-                  <button className={styles.navbtn}>Ук</button>
-                </li>
-                <li className={styles.navItem}>
-                  <button className={styles.navbtn}>En</button>
-                </li>
-                <li className={styles.navItem}>
-                  <button className={styles.navbtn_number}>
-                    +380666225191
-                  </button>
-                </li>
-              </div>
+              <RenderLanguageButtons />
               <li className={styles.navItem_desc}>
                 High quality printing. Clothing and accessories branding.
               </li>
-
-              <div className={styles.inner__boxTwo}>
-                <li className={styles.navItem}>
-                  <a href="#" className={styles.nav_social}>
-                    <Insta />
-                  </a>
-                </li>
-                <li className={styles.navItem}>
-                  <a href="#" className={styles.nav_social}>
-                    <Telegram />
-                  </a>
-                </li>
-                <li className={styles.nav_social}>
-                  <a href="#">
-                    <Viber />
-                  </a>
-                </li>
-                <li className={styles.navItem}>
-                  <button className={styles.nav_price}>Calculate price</button>
-                </li>
-              </div>
+              <RenderSocialButtons />
             </ul>
           </nav>
-          <BurgerButton onClick={handleMenu} />
+          <BurgerButton onClick={handleClick} activeState={activeState} />
         </div>
       </Container>
     </header>
   );
-}
+};
+
+export default Header;

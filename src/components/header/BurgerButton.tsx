@@ -1,10 +1,16 @@
 import styles from "./style.module.css";
 
-export default function BurgerButton({ onClick }) {
+interface IBurgerButton {
+  onClick: () => void;
+  activeState: boolean;
+}
+
+export default function BurgerButton({ onClick, activeState }: IBurgerButton) {
   return (
     <button
       onClick={onClick}
-      className={styles.burger}
+      // className={styles.burger}
+      className={`${styles.burger} ${activeState ? styles.burger__active : ""}`}
       aria-label="open menu"
       aria-hidden="false"
       data-burger

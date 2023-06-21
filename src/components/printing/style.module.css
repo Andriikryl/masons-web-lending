@@ -1,5 +1,6 @@
 .Printing{
-    margin-block-start: 140px;
+    --space-lg: 140px;
+    margin-block-start: clamp(30px, 5vw + 1rem, var(--space-lg));
     margin-block-end: 60px;
     overflow: hidden;
 }
@@ -8,7 +9,7 @@
     font-family: 'Fairwall Sans';
     font-style: normal;
     font-weight: 300;
-    font-size: 48px;
+    font-size: clamp(25px, 5vw + 1rem, 48px);
     line-height: 111.4%;
     color: #F2F6FF;
     margin-block-end: 50px;

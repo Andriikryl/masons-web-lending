@@ -1,12 +1,13 @@
 .reviews{
-    margin-block: 120px;
+  --space-lg: 120px;
+  margin-block: clamp(30px, 5vw + 1rem, var(--space-lg));
 }
 
   .reviews__title{
     font-family: 'Fairwall Sans';
     font-style: normal;
     font-weight: 300;
-    font-size: 48px;
+    font-size: clamp(25px, 5vw + 1rem, 48px);
     line-height: 111.4%;
     text-transform: uppercase;
     color: #F2F6FF;
@@ -36,7 +37,7 @@
   }
   
   .reviews__item{
-    max-width: 250px;
+    min-width: 250px;
   }
 
   .reviews__img{

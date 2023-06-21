@@ -1,5 +1,7 @@
 import { Container } from "../container/Container";
 import styles from "./style.module.css";
+import ReviewItem from "./ReviewItem";
+
 export default function Reviews() {
   return (
     <section className={styles.reviews}>
@@ -7,111 +9,41 @@ export default function Reviews() {
         <h3 className={styles.reviews__title}>Reviews</h3>
         <div>
           <ul className={styles.job_experience}>
-            <li className={styles.reviews__item}>
-              <div className={styles.flex}>
-                <div className={styles.reviews__img}>
-                  <img src="public/reviews/rev.jpg" alt="image" />
-                </div>
-                <div className={styles.job_info}>
-                  <h2 className={styles.role}>Кирилл</h2>
-                  <span className={styles.reviews__time}>21/09/2021</span>
-                </div>
-              </div>
-              <p className={styles.reviews__desc}>
-                I ordered stickers, everything was done efficiently,
-                professionally and on time. I recommend!
-              </p>
-            </li>
-            <li className={styles.reviews__item}>
-              <div className={styles.flex}>
-                <div className={styles.reviews__img}>
-                  <img src="public/reviews/rev.jpg" alt="image" />
-                </div>
-                <div className={styles.job_info}>
-                  <h2 className={styles.role}>Кирилл</h2>
-                  <span className={styles.reviews__time}>21/09/2021</span>
-                </div>
-              </div>
-              <p className={styles.reviews__desc}>
-                I ordered stickers, everything was done efficiently,
-                professionally and on time. I recommend!
-              </p>
-            </li>
-            <li className={styles.reviews__item}>
-              <div className={styles.flex}>
-                <div className={styles.reviews__img}>
-                  <img src="public/reviews/rev.jpg" alt="image" />
-                </div>
-                <div className={styles.job_info}>
-                  <h2 className={styles.role}>Кирилл</h2>
-                  <span className={styles.reviews__time}>21/09/2021</span>
-                </div>
-              </div>
-              <p className={styles.reviews__desc}>
-                I ordered stickers, everything was done efficiently,
-                professionally and on time. I recommend!
-              </p>
-            </li>
-            <li className={styles.reviews__item}>
-              <div className={styles.flex}>
-                <div className={styles.reviews__img}>
-                  <img src="public/reviews/rev.jpg" alt="image" />
-                </div>
-                <div className={styles.job_info}>
-                  <h2 className={styles.role}>Кирилл</h2>
-                  <span className={styles.reviews__time}>21/09/2021</span>
-                </div>
-              </div>
-              <p className={styles.reviews__desc}>
-                I ordered stickers, everything was done efficiently,
-                professionally and on time. I recommend!
-              </p>
-            </li>
-            <li className={styles.reviews__item}>
-              <div className={styles.flex}>
-                <div className={styles.reviews__img}>
-                  <img src="public/reviews/rev.jpg" alt="image" />
-                </div>
-                <div className={styles.job_info}>
-                  <h2 className={styles.role}>Кирилл</h2>
-                  <span className={styles.reviews__time}>21/09/2021</span>
-                </div>
-              </div>
-              <p className={styles.reviews__desc}>
-                I ordered stickers, everything was done efficiently,
-                professionally and on time. I recommend!
-              </p>
-            </li>
-            <li className={styles.reviews__item}>
-              <div className={styles.flex}>
-                <div className={styles.reviews__img}>
-                  <img src="public/reviews/rev.jpg" alt="image" />
-                </div>
-                <div className={styles.job_info}>
-                  <h2 className={styles.role}>Кирилл</h2>
-                  <span className={styles.reviews__time}>21/09/2021</span>
-                </div>
-              </div>
-              <p className={styles.reviews__desc}>
-                I ordered stickers, everything was done efficiently,
-                professionally and on time. I recommend!
-              </p>
-            </li>
-            <li className={styles.reviews__item}>
-              <div className={styles.flex}>
-                <div className={styles.reviews__img}>
-                  <img src="public/reviews/rev.jpg" alt="image" />
-                </div>
-                <div className={styles.job_info}>
-                  <h2 className={styles.role}>Кирилл</h2>
-                  <span className={styles.reviews__time}>21/09/2021</span>
-                </div>
-              </div>
-              <p className={styles.reviews__desc}>
-                I ordered stickers, everything was done efficiently,
-                professionally and on time. I recommend!
-              </p>
-            </li>
+            <ReviewItem
+              name="Кирилл"
+              date="21/09/2021"
+              description="I ordered stickers, everything was done efficiently, professionally and on time. I recommend!"
+            />
+            <ReviewItem
+              name="Кирилл"
+              date="21/09/2021"
+              description="I ordered stickers, everything was done efficiently, professionally and on time. I recommend!"
+            />
+            <ReviewItem
+              name="Кирилл"
+              date="21/09/2021"
+              description="I ordered stickers, everything was done efficiently, professionally and on time. I recommend!"
+            />
+            <ReviewItem
+              name="Кирилл"
+              date="21/09/2021"
+              description="I ordered stickers, everything was done efficiently, professionally and on time. I recommend!"
+            />
+            <ReviewItem
+              name="Кирилл"
+              date="21/09/2021"
+              description="I ordered stickers, everything was done efficiently, professionally and on time. I recommend!"
+            />
+            <ReviewItem
+              name="Кирилл"
+              date="21/09/2021"
+              description="I ordered stickers, everything was done efficiently, professionally and on time. I recommend!"
+            />
+            <ReviewItem
+              name="Кирилл"
+              date="21/09/2021"
+              description="I ordered stickers, everything was done efficiently, professionally and on time. I recommend!"
+            />
           </ul>
         </div>
       </Container>
