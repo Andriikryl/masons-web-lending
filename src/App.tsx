@@ -1,5 +1,6 @@
 import "./App.css";
 import CanDo from "./components/canDo/CanDo";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import Order from "./components/order/Order";
@@ -25,6 +26,7 @@ function App() {
       <RolString string="ALSO WE CAN DO /" />
       <CanDo />
       <Order />
+      <Footer />
     </main>
   );
 }

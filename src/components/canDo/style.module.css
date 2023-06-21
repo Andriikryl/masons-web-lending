@@ -14,19 +14,26 @@
 
 .canDo__box{
     display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .canDo__list{
     padding: 60px 200px 40px 70px;
     border: 2px solid hsla(222, 100%, 97%, 1);
+    flex-grow: 1;
 }
 
-.canDo__list:nth-child(1){
+.canDo__list{
+    max-width: 500px;
+}
+
+/* .canDo__list:nth-child(1){
     border-right: 0;
 }
 .canDo__list:nth-child(2){
     border-right: 0;
-}
+} */
 
 .canDo__link{
     font-family: 'Fairwall Sans';
