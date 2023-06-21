@@ -21,7 +21,7 @@
     font-family: 'Fairwall Sans';
     font-style: normal;
     font-weight: 300;
-    font-size: 200px;
+    font-size: clamp(30px, 5vw + 4rem, 200px);
     line-height: 104.4%;
     text-align: center;
     text-transform: uppercase;

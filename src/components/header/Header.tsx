@@ -5,6 +5,7 @@ import { Telegram } from "../../icons/telegram";
 import { Viber } from "../../icons/viber";
 import { Container } from "../container/Container";
 import styles from "./style.module.css";
+import BurgerButton from "./BurgerButton";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -74,15 +75,7 @@ export default function Header() {
               </div>
             </ul>
           </nav>
-          <button
-            onClick={handleMenu}
-            className={styles.burger}
-            aria-label="open menu"
-            aria-hidden="false"
-            data-burger
-          >
-            <span className={styles.burger__line}></span>
-          </button>
+          <BurgerButton onClick={handleMenu} />
         </div>
       </Container>
     </header>
