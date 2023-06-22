@@ -5,6 +5,7 @@ import styles from "./style.module.css";
 import BurgerButton from "./BurgerButton";
 import RenderLanguageButtons from "./renderLanguageButtons";
 import RenderSocialButtons from "./renderSocialButtons";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [activeState, setActiveState] = useState(false);
@@ -16,23 +17,34 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Container>
-        <div className={styles.headerBox}>
-          <a className={styles.logo} href="#">
+        <motion.div className={styles.headerBox}>
+          <motion.a
+            className={styles.logo}
+            href="#"
+            initial={{ opacity: 0, x: -400 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
             <Logo />
-          </a>
+          </motion.a>
           <nav
             className={`${styles.nav} ${activeState ? styles.menu_active : ""}`}
           >
             <ul className={styles.navList}>
               <RenderLanguageButtons />
-              <li className={styles.navItem_desc}>
+              <motion.li
+                className={styles.navItem_desc}
+                initial={{ opacity: 0, x: 3000 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.7 }}
+              >
                 High quality printing. Clothing and accessories branding.
-              </li>
+              </motion.li>
               <RenderSocialButtons />
             </ul>
           </nav>
           <BurgerButton onClick={handleClick} activeState={activeState} />
-        </div>
+        </motion.div>
       </Container>
     </header>
   );

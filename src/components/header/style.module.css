@@ -1,5 +1,6 @@
 .header{
     padding-block-start: 41px;
+    overflow: hidden;
 }
 
 .headerBox{
@@ -87,7 +88,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    /* margin-inline-end: clamp(10px, 5vw + 1rem, 200px); */
+    margin-inline-end: clamp(10px, 5vw + 1rem, 200px);
 }
 
 
@@ -95,7 +96,7 @@
     display: flex;
     align-items: center;
     gap: 27px;
-    /* margin-inline-start: clamp(10px, 5vw + 3rem, 200px); */
+    margin-inline-start: clamp(10px, 5vw + 3rem, 200px);
 }
 
 
